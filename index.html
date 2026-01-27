@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Camilo – Desarrollo Web Modular y Animado</title>
+  <meta name="description" content="Desarrollo de sitios web modernos, accesibles y escalables. Especialista en React, CSS, Framer Motion y experiencias visuales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#hero">Camílo Holguín</a>
+      
+      <!-- Botón hamburguesa -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+      ☰
+      </button>
+      
+      <!-- Lista de navegación -->
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto" class="btn btn-accent">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container grid-2">
+        <div class="hero-content">
+          <h1 class="title-xl">Desarrollo web modular, accesible y con movimiento.</h1>
+          <p class="lead">Construyo experiencias rápidas, responsivas y mantenibles con React, CSS y animaciones bien pensadas.</p>
+          <div class="hero-cta">
+            <a href="#contacto" class="btn btn-outline">Contáctame</a>
+           
+            <!-- Modal oculto por defecto -->
+            <div class="modal" id="contactModal" aria-hidden="true">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Mis Contactos</h2>
+                <ul>
+                  <li><a href="https://wa.me/573001112233" target="_blank">WhatsApp</a></li>
+                  <li><a href="https://www.tiktok.com/@tuusuario" target="_blank">TikTok</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="trust" aria-label="Tecnologías">
+            <li>React</li><li>CSS</li><li>Framer Motion</li><li>Accesibilidad</li><li>Automatización</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="card-glow">
+            <h3>Performance • UX • Escalabilidad</h3>
+            <p>Arquitecturas limpias y animaciones sutiles que elevan tu marca.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2 class="title-lg">Servicios</h2>
+        <div class="grid-3 cards">
+          <article class="card">
+            <h3>Webs a medida</h3>
+            <p>Sitios responsivos, accesibles y optimizados para SEO. Código modular listo para crecer.</p>
+            <ul class="bullets">
+              <li><strong>Stack:</strong> React • Vite • CSS</li>
+              <li><strong>Entrega:</strong> Diseño + Desarrollo + Deploy</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Animación y UX</h3>
+            <p>Microinteracciones con Framer Motion y transiciones que guían al usuario sin distraer.</p>
+            <ul class="bullets">
+              <li><strong>Motion:</strong> Hover, scroll, modales</li>
+              <li><strong>Accesibilidad:</strong> focus, contraste, ARIA</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Optimización & escalabilidad</h3>
+            <p>Refactor, performance, CI/CD y arquitectura de componentes para equipos.</p>
+            <ul class="bullets">
+              <li><strong>Automatización:</strong> scripts, alias</li>
+              <li><strong>Auditorías:</strong> Lighthouse, Web Vitals</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="container grid-2">
+        <div class="sobre-mi-card">
+          <h2 class="title-lg">Sobre mí</h2>
+          <p>Desarrollador full‑stack enfocado en experiencias visuales y rendimiento. Metódico, orientado a detalle y al reuso.</p>
+          <ul class="bullets">
+            <li><strong>Fuerte en:</strong> responsive, accesibilidad, animación</li>
+            <li><strong>Trabajo:</strong> documentación formal, checklists operativos</li>
+            <li><strong>Meta:</strong> sitios que convierten y escalan sin romperse</li>
+          </ul>
+        </div>
+        <div class="bio-card card">
+          <h3>En qué creo</h3>
+          <p>Arquitectura clara, pruebas, y una capa de movimiento que humaniza la interfaz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="title-lg">Contacto</h2>
+        <form class="contact-form" netlify>
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Camilo — Desarrollo web profesional</p>
+      <ul class="footer-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
