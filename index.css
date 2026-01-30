@@ -1,7 +1,10 @@
 /* Estilos generales */
 body {
-  margin: 0;
+  margin: 0;                  /* elimina márgenes por defecto */
   font-family: Arial, sans-serif;
+  line-height: 1.6;           /* mejora la legibilidad */
+  background-color: #f9f9f9;  /* color de fondo suave */
+  padding: 20px;              /* espacio interno alrededor del contenido */
 }
 
 .site-header {
@@ -1008,4 +1011,50 @@ body {
 }
 .container.grid-2 {
   margin-top: 100px; /* prueba con 80px o 120px según tu diseño */
+}
+.contact-form {
+  max-width: 500px;        /* Limita el ancho para que no se expanda demasiado */
+  margin: 0 auto;          /* Centra horizontalmente en pantallas grandes */
+  padding: 20px;           /* Espacio interno */
+}
+
+/* Ajustes para móviles y tablets */
+@media (max-width: 768px) {
+  .contact-form {
+    margin-left: 10%;      /* Empuja un poco hacia la izquierda */
+    margin-right: auto;    /* Mantiene el balance */
+    width: 80%;            /* Que no ocupe todo el ancho */
+  }
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;  /* Etiqueta arriba, input abajo */
+  margin-bottom: 15px;     /* Espacio entre filas */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button.btn-primary {
+  background-color: #e74c3c; /* Tu rojo claro de branding */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #c0392b;
 }
