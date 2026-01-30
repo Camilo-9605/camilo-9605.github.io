@@ -1058,3 +1058,18 @@ button.btn-primary {
 button.btn-primary:hover {
   background-color: #c0392b;
 }
+/* Estilo base del formulario */
+.contact-form {
+  max-width: 500px;        /* Ancho máximo */
+  margin: 0 auto;          /* Centrado en desktop */
+  padding: 20px;
+}
+
+/* Ajustes responsivos para móviles y tablets */
+@media (max-width: 768px) {
+  .contact-form {
+    margin-left: 10%;      /* Lo empujamos un poco a la izquierda */
+    margin-right: auto;    /* Mantiene el equilibrio */
+    width: 80%;            /* No ocupa todo el ancho */
+  }
+}
