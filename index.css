@@ -189,6 +189,18 @@ body {
   border-radius: 12px;
   animation: glowPulse 2s infinite;
 }
+.card {
+  background: #ffe6e6;
+  border: 2px solid #ff9999;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(255, 102, 102, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  /* 🔥 Pulsación automática */
+  animation: glowPulse 2s infinite;
+}
+
 
 /* =========================
    FORMULARIO
