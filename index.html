@@ -34,27 +34,40 @@
     <section id="hero" class="section hero">
       <div class="container grid-2">
         <div class="hero-content">
-          <h1 class="title-xl">Desarrollo web modular, accesible y con movimiento.</h1>
-          <p class="lead">Construyo experiencias rápidas, responsivas y mantenibles con React, CSS y animaciones bien pensadas.</p>
-          <div class="hero-cta">
-            <a href="#contacto" class="btn btn-outline">Contáctame</a>
-           
-            <!-- Modal oculto por defecto -->
-            <div class="modal" id="contactModal" aria-hidden="true">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Mis Contactos</h2>
-                <ul>
-                  <li><a href="https://wa.me/+573219827871" target="_blank">WhatsApp</a></li>
-                  <li><a href="https://www.tiktok.com/@camiloholguin_9600" target="_blank">TikTok</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <ul class="trust" aria-label="Tecnologías">
-            <li>React</li><li>CSS</li><li>Framer Motion</li><li>Accesibilidad</li><li>Automatización</li>
-          </ul>
-        </div>
+  <h1 class="title-xl">
+    Desarrollo web modular, accesible y con movimiento.
+  </h1>
+
+  <p class="lead">
+    Construyo experiencias rápidas, responsivas y mantenibles con React, CSS y animaciones bien pensadas.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#contacto" class="btn-primary">Contáctame</a>
+    <button class="btn-outline" id="openModal">Ver redes</button>
+  </div>
+
+  <ul class="trust" aria-label="Tecnologías">
+    <li>React</li>
+    <li>CSS</li>
+    <li>Framer Motion</li>
+    <li>Accesibilidad</li>
+    <li>Automatización</li>
+  </ul>
+</div>
+
+<!-- Modal FUERA del hero -->
+<div class="modal" id="contactModal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close" id="closeModal">&times;</button>
+    <h2>Mis Contactos</h2>
+    <ul class="modal-links">
+      <li><a href="https://wa.me/+573219827871" target="_blank">WhatsApp</a></li>
+      <li><a href="https://www.tiktok.com/@camiloholguin_9600" target="_blank">TikTok</a></li>
+    </ul>
+  </div>
+</div>
+
         <div class="hero-visual">
           <div class="card-glow">
             <h3>Performance • UX • Escalabilidad</h3>
