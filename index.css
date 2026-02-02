@@ -88,10 +88,6 @@ body {
 }
 
 .title-xl {
-  font-size: 2.5rem;
-  color: #b30000;
-}
-.title-xl {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
