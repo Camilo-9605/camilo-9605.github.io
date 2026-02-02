@@ -110,9 +110,25 @@ body {
 }
 
 .lead {
-  font-size: 1.2rem;
-  color: #4d0000;
-  margin: 1rem 0;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpSoft 0.9s ease-out forwards;
+  animation-delay: 0.3s; /* aparece después del h1 */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.lead:hover {
+  transform: translateY(0) scale(1.01);
+  color: #e0e0e0; /* opcional si el fondo es oscuro */
+}
+
+@keyframes fadeUpSoft {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-cta {
