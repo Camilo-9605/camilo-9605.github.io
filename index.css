@@ -30,6 +30,41 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+/* Links normales */
+nav a {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Efecto al tocar en móvil */
+nav a:active {
+  transform: scale(0.92);
+  opacity: 0.8;
+}
+
+/* Línea animada elegante */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ff6b6b; /* rojo claro */
+  transition: width 0.3s ease;
+}
+
+nav a:focus::after,
+nav a:active::after {
+  width: 100%;
+}
+
+/* Mejor experiencia táctil */
+nav a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 
 .logo {
   font-size: 1.5rem;
