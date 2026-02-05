@@ -215,18 +215,52 @@ nav a {
 }
 
 .btn-outline {
+  padding: 12px 20px;
   border: 2px solid #ff4d4d;
+  background: transparent;
   color: #ff4d4d;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.btn-outline:hover {
-  background-color: #ff4d4d;
-  color: #fff;
+.btn-outline:active {
+  transform: scale(0.95);
+  background: #ff4d4d;
+  color: white;
 }
+
+/* Contenedor oculto */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+/* Cuando se activa */
+.social-icons.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Iconos */
+.social-icons a {
+  font-size: 28px;
+  color: #ff4d4d;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
 
 /* =========================
    SECCIONES GENERALES
